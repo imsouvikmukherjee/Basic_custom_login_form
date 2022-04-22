@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .form {
+            height: 400px;
+            max-width: 400px;
+            min-width: 200px;
+            margin: 0 auto;
+            padding: 30px;
+            /* background-color: dodgerblue; */
+            /* color: aliceblue; */
+            margin-top: 100px;
+            box-shadow: 5px 5px 5px 2px grey;
+            border-radius: 20px;
+            /* border: 1px solid dodgerblue; */
+            border-top: 1px solid grey;
+            border-left: 1px solid grey;
+        }
+        
+        .input {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            background-color: #dfe6e9;
+            border: none;
+            border-radius: 10px;
+            padding-left: 20px;
+        }
+        
+        .btn {
+            width: 100%;
+            height: 40px;
+            border: none;
+            background-image: linear-gradient(to right, red, yellow);
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: aliceblue;
+        }
+        
+        .btn:hover {
+            background-image: linear-gradient(to left, red, yellow);
+            transition: 1s;
+        }
+        
+        .h2 {
+            padding-bottom: 20px;
+        }
+        
+        .forgot_password {
+            height: 30px;
+            width: 100%;
+            /* background-color: red; */
+        }
+        
+        .checkbox {
+            float: left;
+        }
+        
+        a {
+            float: right;
+            text-decoration: none;
+            color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="form">
+        <h2>Account Login</h2><br><br>
+        <label style="margin-top: 20px;" for="Username">Username</label><br>
+        </span><input type="text" class="input" placeholder="Username">
+        <label for="password" class="label">Password</label><br>
+        <input type="password" class="input" placeholder="Password">
+        <div class="forgot_password">
+            <input class="checkbox" type="checkbox">
+            <label for="Rememberme" style="padding-left: 8px;">Remember Me</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+        <button class="btn"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
+    </div>
+</body>
+
+</html>
